@@ -1,0 +1,32 @@
+const languageData = [
+  { lang: "sq", name: "Albanian - Shqip" },
+  { lang: "ar", name: "Arabic - العَرَبِيةُ" },
+  { lang: "bs", name: "Bosnian - Bosanski" },
+  { lang: "bg", name: "Bulgarian - Български" },
+  { lang: "hr", name: "Croatian - Hrvatski" },
+  { lang: "ch", name: "Chinese - 英语" },
+  { lang: "cs", name: "Czech - Čeština" },
+  { lang: "nl", name: "Dutch - Nederlands" },
+  { lang: "en", name: "English" },
+  { lang: "et", name: "Estonian - Eesti" },
+  { lang: "fr", name: "French - Français" },
+  { lang: "it", name: "Italian - Italiano" },
+  { lang: "fi", name: "Finish - Suomen" },
+  { lang: "de", name: "German - Deutsch" },
+  { lang: "jp", name: "Japanese - 日本語" },
+  { lang: "pl", name: "Polish - Polska" },
+  { lang: "pt", name: "Portuguese - Português" },
+  { lang: "ru", name: "Russian - Русский" },
+  { lang: "rs", name: "Serbian - Српски" },
+  { lang: "sk", name: "Slovak - Slovenčina" },
+  { lang: "es", name: "Spanish - Español" },
+  { lang: "th", name: "Thai - ไทย" },
+  { lang: "tr", name: "Turkish - Türkçe" },
+  { lang: "uk", name: "Ukrainian - Українська" },
+  {
+    href: "//app.prntscr.com/translate-lightshot.html",
+    linkTitle: "Add your language",
+  },
+];
+
+export default languageData;
