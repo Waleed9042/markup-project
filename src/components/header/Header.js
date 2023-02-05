@@ -1,33 +1,39 @@
-import Language from "./language/LanguageList";
-import Logo from "./Logo";
-import languageData from "../../dummy/languageData";
-import SignInLink from "./SignInLink";
-import UserOptions from "./user-options/UserOptions";
-import DownloadButton from "./DownloadButton";
-import SocialOptions from "./social-options/SocialOptions";
+import React from "react";
+import BookNowButton from "./bookNow/BookNowButton";
+import ContactSection from "./contactSection/ContactSection";
+import LogoContainer from "./logoContainer/LogoContainer";
+import NavSection from "./navSection/NavSection";
 
-function Header() {
+import SpaImage from "../../images/spa.png";
+
+export default function Header() {
   return (
-    <div className="header">
-      <div className="page-constrain">
-        <Logo
-          title1="Lightshot"
-          title2="screen capture tool"
-          hyperLink="https://prnt.sc/"
-        />
-        <Language selectedLanguage="English" languageData={languageData} />
-        <SignInLink
-          signInLink="https://prntscr.com/gallery.html"
-          target="_self"
-          text="Sign in"
-          id="signin"
-        />
-        <UserOptions userName="username" />
-        <DownloadButton btnText="Download Lightshot for free" />
-        <SocialOptions />
+    <div className="flex flex-row bg-[#FFFFFF] h-16 pt-3">
+      <div className="flex basis-1/2">
+        <div className="flex justify-center basis-1/2">
+          <LogoContainer
+            imgSrc={SpaImage}
+            alternateText="Logo"
+            title="Skinspa"
+            colorHash="#FCC761"
+          />
+        </div>
+        <div className="flex justify-end basis-1/2">
+          <ContactSection />
+        </div>
+      </div>
+      <div className="flex basis-1/2">
+        <div className="flex justify-start items-center text-center">
+          <NavSection />
+        </div>
+        <div className="flex justify-start items-center text-center">
+          <BookNowButton
+            btnText="Book Now"
+            borderColor="FCC761"
+            textColor="FCC761"
+          />
+        </div>
       </div>
     </div>
   );
 }
-
-export default Header;
